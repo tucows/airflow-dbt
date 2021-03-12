@@ -56,7 +56,7 @@ setup(
     name='airflow_dbt',
     version=about['__version__'],
     packages=find_packages(exclude=['tests']),
-    install_requires=['apache-airflow >= 1.10.3'],
+    install_requires=['apache-airflow >= 1.10.4'],
     author='GoCardless',
     author_email='engineering@gocardless.com',
     description='Apache Airflow integration for dbt',
