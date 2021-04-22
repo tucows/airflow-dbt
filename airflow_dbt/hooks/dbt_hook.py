@@ -114,7 +114,7 @@ class DbtCliHook(BaseHook):
             self.log.info(" ".join(dbt_cmd))
 
         if self.warn_error:
-            dbt_cmd = [dbt_cmd.pop(0)] + ['--warn-error'] + dbt_cmd
+            dbt_cmd.insert(1, '--warn-error')
 
         sp = subprocess.Popen(
             dbt_cmd,
